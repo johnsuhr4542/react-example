@@ -8,6 +8,8 @@ const checkAuth = createAction(CHECK_AUTH);
 const login = createAction(LOGIN);
 const logout = createAction(LOGOUT);
 
+const check = () => Promise.resolve('ROLE_MEMBER');
+
 export const checkAuthAsync = () => async (dispatch) => {
   setTimeout(
     () => dispatch(checkAuth()),
