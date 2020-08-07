@@ -3,8 +3,8 @@ import { createAction, handleActions } from 'redux-actions';
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
 
-export const increment = createAction(INCREMENT);
-export const decrement = createAction(DECREMENT);
+const increment = createAction(INCREMENT);
+const decrement = createAction(DECREMENT);
 
 export const incrementAsync = () => dispatch => {
   setTimeout(

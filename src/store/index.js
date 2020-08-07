@@ -4,6 +4,7 @@ import storage from 'redux-persist/es/storage';
 import ReduxThunk from 'redux-thunk';
 
 import Counter from './Counter';
+import Authentication from './Authentication';
 
 const persistConfig = {
   key: 'root',
@@ -11,7 +12,8 @@ const persistConfig = {
 }
 
 const reducers = combineReducers({
-  Counter
+  Counter,
+  Authentication
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
